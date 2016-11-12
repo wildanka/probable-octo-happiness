@@ -84,7 +84,7 @@ public class ForecastFragment extends Fragment {
         List<String> weekForecast = new ArrayList<String>(Arrays.asList(data)); //weekForecast = nama dari list data
 
         //membuat adapter
-        ArrayAdapter<String> mForecastAdapter = new ArrayAdapter<String>(
+        mForecastAdapter = new ArrayAdapter<String>(
                 getActivity(), // the current context (this activity)
                 R.layout.list_item_forecast, //ID layout
                 R.id.list_item_forecast_textview, // ID konten layout/text *isi layoutnya
